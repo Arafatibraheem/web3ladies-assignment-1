@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract StudentDatabase{
+    //address is the key, student is the value, students is the specifier
+    mapping (address => student) public StudentRecord;
+
+    //my structure
+    struct student{
+
+        address studentId;
+        string name;
+        uint age;
+    }
+
+    function registerStudent(address studentId, string memory name,uint age) public view
+     
+     function getStudentDetails(address studentId) public view returns (address,string,uint)
+
+     return(StudentRecord[studentId].studentId,
+     StudentRecord[StudentId].name,
+     StudentRecord[studentId].age);
+}
